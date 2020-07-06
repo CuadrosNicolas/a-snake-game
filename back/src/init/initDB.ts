@@ -4,7 +4,7 @@ import * as mongoose from 'mongoose';
  * @return {Promise<mongoose>}
  */
 export function connectDB() {
-  const uri = `mongodb://localhost:27017`;
+  const uri = `mongodb://${process.env.MONGO || 'localhost'}:27017`;
   return mongoose.connect(uri, (err) => {
     if (err) {
       console.log(JSON.stringify(err));

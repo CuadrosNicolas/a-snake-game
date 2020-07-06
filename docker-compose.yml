@@ -23,5 +23,7 @@ services:
     depends_on:
       - mongodb
     container_name: snake_back
+    environment:
+      - MONGO=mongodb
     ports:
       - "8080:8080"

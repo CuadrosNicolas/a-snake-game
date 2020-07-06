@@ -1,3 +1,4 @@
 FROM mongo
 WORKDIR /usr/src/data
+ENV MONGO_DOCKER=mongodb
 COPY data.js /docker-entrypoint-initdb.d/
