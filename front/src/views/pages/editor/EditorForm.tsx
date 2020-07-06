@@ -66,7 +66,7 @@ const useStyles = makeStyles(() =>
 
 const LEVEL_NAME_LABEL = "Nom du niveau";
 const GAME_MODE_LABEL = "Mode de jeu";
-const GAME_MODE_INFINITY_LABEL = "Infinit";
+const GAME_MODE_INFINITY_LABEL = "Infini";
 const GAME_MODE_LIMITED_LABEL = "Limité";
 const GAME_MODE_LIVING_APPLE_LABEL = "Pomme vivante";
 const WIDTH_LABEL = "Largeur";

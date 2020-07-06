@@ -26,7 +26,7 @@ const ENDGAME_LABEL = "Fin de partie !";
 const SPEUDO_LABEL = "Speudo";
 const SAVE_LABEL = "Sauvegarder";
 const GO_BACK_LABEL = "Quitter";
-const REPLAY_LABEL = "Rejour";
+const REPLAY_LABEL = "Rejouer";
 const SPEUDO_ERROR_LABEL = "Le speudo ne doit pas être vide";
 
 const SCORE_SAVED_LABEL = "Le score a bien été enregistré";

@@ -43,7 +43,7 @@ const useStyles = makeStyles({
 const GAME_MODE_LABEL = "Mode de jeu";
 
 const gameModeLabels = {
-  [GameMode.INFINITY]: "Infinit",
+  [GameMode.INFINITY]: "Infini",
   [GameMode.LIMITED]: "Limité",
   [GameMode.LIVING_APPLE]: "Pomme vivante",
 };

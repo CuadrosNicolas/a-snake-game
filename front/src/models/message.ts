@@ -1,4 +1,9 @@
 
+
+/**
+ * Simple message classes
+ */
+
 export enum MessageCategory {
   ERROR,
   VALIDATION
