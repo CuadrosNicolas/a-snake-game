@@ -43,7 +43,9 @@ const EDITIING_MODE_LABEL = "Action";
 const PLACE_PLAYER_LABEL = "Placer le joueur";
 const PLACE_WALLS_LABEL = "Placer des murs";
 const REMOVE_ITEMS_LABEL = "Supprimer des éléments";
-
+/**
+ * Svg part of the editor, allowing to place player and walls
+ */
 export function EditorCanvas() {
   const style = useStyles();
   const environmentContext = useContext(EnvironmentContext);

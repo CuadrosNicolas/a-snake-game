@@ -3,10 +3,6 @@ import { PartyStatus } from "../../models/partyStatus";
 import { KeyPressed } from "../../models/keyPressed";
 
 /**
- * Basic rule allowing the player to move
- * around the level.
- * Grow when eating a fruit.
- * Replace the fruit when eaten.
  * End the game when hitting himself, a wall or the border of the level
  * @param environment
  * @param partyStatus 

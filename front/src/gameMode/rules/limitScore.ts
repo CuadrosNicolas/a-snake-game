@@ -5,7 +5,7 @@ import { KeyPressed } from "../../models/keyPressed";
 
 const fruitsLimit = 10;
 /**
- * Rule taking the infinity rule and adds a fruit limit
+ * add a fruit limit
  * which end the game when reached.
  * @param environment
  * @param partyStatus 

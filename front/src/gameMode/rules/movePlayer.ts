@@ -16,9 +16,8 @@ const moves = {
  * around the level.
  * Grow when eating a fruit.
  * Replace the fruit when eaten.
- * End the game when hitting himself, a wall or the border of the level
  * @param environment
- * @param partyStatus 
+ * @param partyStatus
  * @param keyPressed 
  */
 export function movePlayer(environment: Environment, partyStatus: PartyStatus, keyPressed: KeyPressed, ticks: number) {

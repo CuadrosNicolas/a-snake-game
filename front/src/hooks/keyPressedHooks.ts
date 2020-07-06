@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 export const keyPressedSubject = new BehaviorSubject<KeyPressed>(KeyPressed.NONE);
 
 /**
- * return the last key pressed by the use
+ * return the last key pressed by the user
  */
 export function useKeyPressed() {
   const [keyPressed, setKeyPressed] = useState(KeyPressed.NONE)

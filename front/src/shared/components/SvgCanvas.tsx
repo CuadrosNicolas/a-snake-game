@@ -11,7 +11,7 @@ export interface SvgCanvasProps {
 }
 
 /**
- * Svg wrapper use to contain the game grid
+ * Svg wrapper use to contain the renderer component
  * @param props
  */
 export function SvgCanvas(props: SvgCanvasProps) {

@@ -7,7 +7,10 @@ import { limitScore } from "./rules/limitScore";
 import { livingApple } from "./rules/livingApple";
 
 
-
+/**
+ * Map a game mode model to a rule function
+ * @param gameMode
+ */
 export function getGameMode(gameMode: GameMode): Rule {
   switch (gameMode) {
     case GameMode.INFINITY:

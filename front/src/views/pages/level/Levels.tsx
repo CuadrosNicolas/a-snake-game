@@ -75,7 +75,7 @@ function LevelCard(props: LevelCardProps) {
 const WELL_DELETED_LABEL = "Le niveau a bien été supprimé";
 
 /**
- * Render the list of levels
+ * Render the list of levels, print level previews when hovered
  */
 export function Levels() {
   const messagingDispatcher = useContext(MessagingContext);

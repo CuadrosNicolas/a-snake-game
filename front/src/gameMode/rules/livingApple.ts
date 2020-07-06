@@ -16,7 +16,7 @@ function randomDirection() {
 }
 
 /**
- * Rule taking the infinity rule and adds a fruit limit
+ * Move the fruit at each tick%3
  * which end the game when reached.
  * @param environment
  * @param partyStatus 

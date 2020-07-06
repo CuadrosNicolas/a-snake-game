@@ -6,7 +6,11 @@ export interface GridRendererProps {
   width: number;
   height: number;
 }
-
+/**
+ * Svg grid with a widht and height
+ * Uses React.useMemo to optimize rendering
+ * @param props
+ */
 export default function GridRenderer(props: GridRendererProps) {
   return React.useMemo(() => {
     return (

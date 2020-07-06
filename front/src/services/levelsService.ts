@@ -4,7 +4,7 @@ import { PlayerResult } from '../models/playerResult';
 import { Vector } from '../models/vector';
 
 /**
- * Funciton allowing to convert a level from the base
+ * Funciton allowing to convert a level from the database
  * to real model
  * @param level
  */

@@ -5,7 +5,7 @@ import { ActionTile, ActionTileType } from "../../../../models/actionTile";
 import { ActionTileRenderer } from "./ActionTileRenderer";
 
 /**
- * Grid of action tiles
+ * Grid of action tiles allowing to place tiles
  * @param props
  */
 export function EditorBackgroundRenderer(props: {
