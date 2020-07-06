@@ -533,7 +533,7 @@ db.levels.insert({
       y: 12,
     },
   ],
-  refreshRate: 100,
+  refreshRate: 150,
   gameMode: 0,
   name: "Dédale",
   playerResults: [],

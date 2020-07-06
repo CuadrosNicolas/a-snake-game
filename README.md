@@ -13,7 +13,8 @@ L'application intègre un éditeur de niveau permettant de créer vos propres ni
 
 ## Pré-requis
 
-Ce projet nécessite node.js, npm ainsi que docker afin de construire et lancer l'application.
+Ce projet nécessite docker afin de construire et lancer l'application.
+Les ports 80 et 27017 doivent être disponible au lancement de l'application.
 
 ## Utilisation de l'éditeur
 

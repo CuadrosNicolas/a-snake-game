@@ -5,6 +5,8 @@ services:
     build: ./mongodb
     container_name: mongodb
     restart: always
+    volumes:
+      - ./volumes/data/db:/data/db
     ports:
       - "27017:27017"
 
