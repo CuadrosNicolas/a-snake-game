@@ -1,0 +1,27 @@
+version: "3.1"
+
+services:
+  mongodb:
+    build: ./mongodb
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+
+  snake_front:
+    build: ./front
+    container_name: snake_front
+    volumes:
+      - "./volumes/front/log:/var/log/nginx"
+    ports:
+      - "127.0.0.1:80:80"
+    depends_on:
+      - snake_back
+
+  snake_back:
+    build: ./back
+    depends_on:
+      - mongodb
+    container_name: snake_back
+    ports:
+      - "8080:8080"
