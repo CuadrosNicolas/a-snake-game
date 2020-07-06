@@ -13,7 +13,7 @@ L'application intègre un éditeur de niveau permettant de créer vos propres ni
 
 ## Pré-requis
 
-Ce projet nécessite node.js ainsi que docker afin de construire et lancer l'application.
+Ce projet nécessite node.js, npm ainsi que docker afin de construire et lancer l'application.
 
 ## Utilisation de l'éditeur
 
@@ -34,8 +34,10 @@ Afin de lancer l'application il suffit de construire les images nécessaires et 
 
 ```bash
  cd ./front;
+ npm install;
  npm run-script build;
  cd ../back;
+ npm install;
  npm run-script build;
  cd ../;
  docker-compose up -d;
