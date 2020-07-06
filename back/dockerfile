@@ -1,7 +1,7 @@
 FROM node:12
 WORKDIR /usr/src/back
-COPY ./build ./build
-COPY ./package*.json ./
-RUN npm install --only=production
-EXPOSE 8080
+COPY ./ ./
+RUN npm ci
+RUN ./node_modules/.bin/tsc
 CMD ["node","./build/index.js"]
+EXPOSE 8080

@@ -11,8 +11,6 @@ services:
   snake_front:
     build: ./front
     container_name: snake_front
-    volumes:
-      - "./volumes/front/log:/var/log/nginx"
     ports:
       - "127.0.0.1:80:80"
     depends_on:
@@ -20,6 +18,7 @@ services:
 
   snake_back:
     build: ./back
+    restart: always
     depends_on:
       - mongodb
     container_name: snake_back

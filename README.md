@@ -30,17 +30,10 @@ les modifications.
 
 ## Lancement
 
-Afin de lancer l'application il suffit de construire les images nécessaires et de lancer les conteneurs via les commandes suivantes :
+Afin de lancer l'application il suffit de construire les images nécessaires et de lancer les conteneurs via la commande suivante :
 
 ```bash
- cd ./front;
- npm install;
- npm run-script build;
- cd ../back;
- npm install;
- npm run-script build;
- cd ../;
  docker-compose up -d;
 ```
 
-L'application sera ensuite disponible sur le [localhost](http://localhost)
+L'application sera ensuite disponible sur le [localhost](http://localhost:80)

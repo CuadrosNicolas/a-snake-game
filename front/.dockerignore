@@ -1,5 +1,5 @@
 node_modules
-.eslintignore
+build
 .eslintrc.json
 .gitignore
-build
+README.md
