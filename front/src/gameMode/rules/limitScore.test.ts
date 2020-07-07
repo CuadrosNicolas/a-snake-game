@@ -18,8 +18,8 @@ describe('Testing limit score rule', () => {
     environment = new Environment(10, 10, walls, player, GameDifficulty.EASY, GameMode.LIVING_APPLE, "TEST", "");
   })
   test('Limit score should end the game when the score is react', () => {
-    const previousPosition = new Vector(5, 5);
-    const partyStatus = new PartyStatus(previousPosition, 10, false);
+    const fruitPosition = new Vector(5, 5);
+    const partyStatus = new PartyStatus(fruitPosition, 10, false);
 
     let nextState = limitScore(environment, partyStatus, KeyPressed.DOWN, 1);
     expect(nextState.partyStatus.end).toBe(true);
