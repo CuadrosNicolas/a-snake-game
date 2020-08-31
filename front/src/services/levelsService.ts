@@ -3,6 +3,8 @@ import { Level } from '../models/level';
 import { PlayerResult } from '../models/playerResult';
 import { Vector } from '../models/vector';
 
+const url = `YOUR_IP_HERE`
+
 /**
  * Funciton allowing to convert a level from the database
  * to real model
@@ -24,7 +26,7 @@ function buildLevel(level: Level) {
  * Return all levels
  */
 function getAllLevels() {
-  return Http.get<Level[]>('http://localhost:8080/levels/all').then(levels => levels.map(buildLevel))
+  return Http.get<Level[]>(`${url}levels/all`).then(levels => levels.map(buildLevel))
 }
 
 /**
@@ -32,7 +34,7 @@ function getAllLevels() {
  * @param level
  */
 function postLevel(level: Level) {
-  return Http.post<Level>('http://localhost:8080/levels', level).then(buildLevel);
+  return Http.post<Level>(`${url}levels`, level).then(buildLevel);
 }
 
 /**
@@ -40,7 +42,7 @@ function postLevel(level: Level) {
  * @param level
  */
 function updateLevel(level: Level) {
-  return Http.post<Level>(`http://localhost:8080/levels/${level.id}`, level).then(buildLevel);
+  return Http.post<Level>(`${url}levels/${level.id}`, level).then(buildLevel);
 }
 
 /**
@@ -48,7 +50,7 @@ function updateLevel(level: Level) {
  * @param id
  */
 function deleteLevel(id: string) {
-  return Http.del<Level>(`http://localhost:8080/levels/${id}`)
+  return Http.del<Level>(`${url}levels/${id}`)
 }
 
 /**
@@ -56,7 +58,7 @@ function deleteLevel(id: string) {
  * @param levelId
  */
 function getLevelById(levelId: string) {
-  return Http.get<Level>(`http://localhost:8080/levels/${levelId}`).then(buildLevel);
+  return Http.get<Level>(`${url}levels/${levelId}`).then(buildLevel);
 }
 
 /**
@@ -65,7 +67,7 @@ function getLevelById(levelId: string) {
  * @param score 
  */
 function postScore(levelId: string, score: PlayerResult) {
-  return Http.post<Level>(`http://localhost:8080/levels/score/${levelId}`, score)
+  return Http.post<Level>(`${url}levels/score/${levelId}`, score)
 
 }
 
